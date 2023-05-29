@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="score-con">
+      <div class="logo">
+        <p>ROCK</p>
+        <p>PAPER</p>
+        <p>SCISSORS</p>
+      </div>
+      <div class="score1">
+        <p>COMPUTER</p>
+        <p>SCORE</p>
+        <span id="score22">0</span>
+      </div>
+      <div class="score2">
+        <p>YOUR</p>
+        <p>SCORE</p>
+        <span id="score">0</span>
+      </div>
+    </div>
+
+    <div class="game-con">
+      <div class="info">
+        <p class="user">You Picked</p>
+        <p class="machine">Computer Picked</p>
+      </div>
+
+      <div class="option">
+        <img src="./images/bg-triangle.svg" alt="" class="trinagle" />
+        <div class="rock-con con">
+          <div class="item">
+            <img src="./images/rock.png" alt="Rock" />
+          </div>
+        </div>
+
+        <div class="sci-con con">
+          <div class="item">
+            <img src="./images/scissor.png" alt="Scissors" />
+          </div>
+        </div>
+
+        <div class="paper-con con">
+          <div class="item">
+            <img src="./images/paper.png" alt="Paper" />
+          </div>
+        </div>
+
+        <div class="rock-con computer">
+          <div class="item">
+            <img src="./images/rock.png" alt="Rock" />
+          </div>
+        </div>
+
+        <div class="sci-con computer">
+          <div class="item">
+            <img src="./images/scissor.png" alt="Scissors" />
+          </div>
+        </div>
+
+        <div class="paper-con computer">
+          <div class="item">
+            <img src="./images/paper.png" alt="Paper" />
+          </div>
+        </div>
+      </div>
+      <div class="btn-div">
+        <button class="btn-rule">Rule</button>
+        <!-- <button class="next-btn ">Next</button> -->
+        <button id="btnNext" class="hidden">Next</button>
+      </div>
+      <div class="rule-modal">
+        <div class="rule-img">
+          <div>
+            <!-- <p>Rule</p> -->
+            <button class="close"><img src="./images/X.png" alt="" /></button>
+          </div>
+          <img class="rule" src="./images/Frame 4.png" alt="" />
+        </div>
+      </div>
+      <div class="win-modal">
+        <h1 class="winner">YOU WIN</h1>
+        <p class="p">AGAINST PC</p>
+        <button class="play">PLAY AGAIN</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
